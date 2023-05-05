@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>div color changer</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<style>
+    *{
+  margin: 0px; 
+  padding: 0px; 
+  box-sizing: border-box;
+}
+ #ball{
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+  <div id="ball"></div>
+<script>
+    const redDiv =  document.getElementById("ball");
+
+redDiv.addEventListener("click", ()=>{
+redDiv.style.backgroundColor = "blue";
+});
+
+</script>
+</body>
+</html>
